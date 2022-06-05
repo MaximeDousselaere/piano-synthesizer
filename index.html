@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<!--
+    Why ? 
+        Because i wanted to do smthg like this, creating a website that can makes noices without any sound files.
+
+    Websites that helps me : 
+        https://marcgg.com/blog/2016/11/01/javascript-audio/
+        https://stackoverflow.com/questions/6343450/generating-sound-on-the-fly-with-javascript-html5
+    TODO : 
+        Utiliser méthode map pour *ngFor les touches du clavier https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Map
+-->
+<html lang="fr">
+    <head>
+        <title>Piano Synthesizer</title>
+        <meta charset="UTF-8"/>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <button onclick="onChangeType('sine')">sine</button>
+        <button onclick="onChangeType('square')">square</button> <br/>
+        <button onclick="onChangeType('triangle')">triangle</button>
+        <button onclick="onChangeType('sawtooth')">sawtooth</button>
+        <br/>
+        Use your keyboard from Q to M
+    </body>    
+</html>
