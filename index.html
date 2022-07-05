@@ -14,14 +14,27 @@
         <title>Piano Synthesizer</title>
         <meta charset="UTF-8"/>
         <link href="style.css" rel="stylesheet">
-        <script src="script.js"></script>
     </head>
     <body>
-        <button onclick="onChangeType('sine')">sine</button>
-        <button onclick="onChangeType('square')">square</button> <br/>
-        <button onclick="onChangeType('triangle')">triangle</button>
-        <button onclick="onChangeType('sawtooth')">sawtooth</button>
+        <div class="switchLang">
+            AZERTY&nbsp;
+            <label class="switch">
+                <input type="checkbox" onclick="onChangeLangue()">
+                <span class="slider round"></span>
+            </label>
+            &nbsp;QWERTY
+        </div>
+        <div class="btnContainer">
+            <button onclick="onChangeType('sine')" id="sine">sine</button>
+            <button onclick="onChangeType('square')" id="square">square</button>
+            <button onclick="onChangeType('triangle')" id="triangle">triangle</button>
+            <button onclick="onChangeType('sawtooth')" id="sawtooth">sawtooth</button>
+        </div>
         <br/>
-        Use your keyboard from Q to M
+        <div class="container">
+            <div id="keyz"></div>
+            <div id="tiles"></div>
+        </div>
     </body>    
 </html>
+<script src="script.js"></script>
